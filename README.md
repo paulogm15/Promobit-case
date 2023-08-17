@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Promobit front-end-challenge
+    Um dos cases para trabalho final da Labenu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introdução
 
-## Available Scripts
+Olá! Obrigado pelo interesse em participar do nosso processo seletivo para dev frontend no Promobit.
 
-In the project directory, you can run:
+O objetivo do desafio proposto é permitir uma melhor avaliação das suas habilidades como candidato à vaga de frontend. Este desafio deve ser feito apenas por você. Sua implementação e escolha de ferramentas poderá ser questionada em outra etapa.
 
-### `npm start`
+## O desafio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Usando a API de filmes gratuita themoviedb em sua versão 3, você será responsável por criar uma listagem dos filmes mais populares do dia, consultando o endpoint GET /movie/popular para realizar a listagem. Ao clicar em um item dessa listagem, outra página com os detalhes do filme escolhido deve ser exibida. Para acessar mais detalhes sobre o filme, você pode consultar o endpoint GET /movie/{movie_id}.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para garantir que o usuário encontre o filme que está procurando, essa lista deverá ser paginada.
 
-### `npm test`
+Siga o layout do figma sugerido. Não há necessidade de ser pixel perfect mas respeite a composição, fontes e cores.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos funcionais
 
-### `npm run build`
+    * O usuário deve ter acesso a uma listagem dos filmes mais populares do dia
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    * O usuário deve conseguir paginar a lista para encontrar novos filmes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * O usuário deve ter acesso a uma outra página com detalhes sobre o filme, ao clicar em um item na listagem
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    * A página com detalhes de um filme deve possuir uma rota própria e estar preparada para ser indexada em mecanismos de pesquisa
 
-### `npm run eject`
+## Requisitos não funcionais
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    * O app deverá ser criado usando React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    * Na raiz do projeto, será necessário incluir um arquivo README.md com as instruções para construir seu projeto localmente. Opcionalmente você pode detalhar as razões pelas escolhas de ferramentas e técnicas aplicadas ao desafio.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    * O app deverá se comportar da mesma forma na última versão estável dos seguintes browsers: Chrome, Firefox, Edge
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    * O app deverá ser responsivo
 
-## Learn More
+## Extras
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Temos insights que nos levam a acreditar que os usuários dessa lista costumam ter uma experiência melhor se conseguirem criar um filtro usando seus gêneros favoritos. Portanto, você também poderá criar filtros de filmes por gênero nessa listagem. Note que um novo endpoint deverá ser consultado para obter uma lista dos possíveis gêneros a serem filtrados, GET /genre/movie/list.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    * O usuário deve conseguir filtrar os filmes listados por gênero, com a possibilidade de usar mais de um gênero
+    * O usuário deve conseguir remover filtros e a listagem deve ser atualizada de acordo com o filtro removido
+    * O usuário deve conseguir voltar para a página de listagem de filmes com os filtros ainda ativos
 
-### Code Splitting
+## Critérios de avaliação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    * Boas práticas de desenvolvimento como: html semântico, componentização, design patterns, clean code
+    * Domínio das ferramentas e linguagens que compõe um app de frontend moderno
+    * Documentação: explicação para construir o app localmente, histórico e workflow de git
