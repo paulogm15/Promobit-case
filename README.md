@@ -1,5 +1,6 @@
 # Promobit front-end-challenge
     Um dos cases para trabalho final da Labenu
+O repositório do desafio pode ser encontrado [AQUI](https://github.com/Promobit/front-end-challenge)
 
 ## Introdução
 
